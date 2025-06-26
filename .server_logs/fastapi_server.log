@@ -10,3 +10,82 @@ INFO:     172.17.0.1:56598 - "GET /docs HTTP/1.1" 200 OK
 INFO:     172.17.0.1:56588 - "GET /docs HTTP/1.1" 200 OK
 INFO:     172.17.0.1:56588 - "GET /openapi.json HTTP/1.1" 200 OK
 INFO:     172.17.0.1:56588 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57296 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57306 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57312 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57296 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57324 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57324 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57324 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57312 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57306 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57324 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57296 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57296 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57296 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "OPTIONS /auth HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "POST /auth HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "OPTIONS /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "OPTIONS /games/join HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:58310 - "POST /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:58310 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55756 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55758 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55758 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36920 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36920 - "POST /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:36920 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:36924 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:36924 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36924 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36924 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36924 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:36924 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:45102 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:45102 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:45102 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:45102 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:45110 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:37806 - "OPTIONS /games/join HTTP/1.1" 200 OK
+INFO:     172.17.0.1:37806 - "POST /games/join HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:49280 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49280 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49284 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49292 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49280 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49302 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49302 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49302 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49314 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49316 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49316 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49314 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49314 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49316 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49332 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48954 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48954 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48956 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48962 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48954 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48978 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48978 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:48978 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49048 - "OPTIONS /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49056 - "OPTIONS /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49056 - "GET /games HTTP/1.1" 200 OK
+INFO:     172.17.0.1:49048 - "GET /games HTTP/1.1" 200 OK

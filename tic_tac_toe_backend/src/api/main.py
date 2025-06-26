@@ -41,6 +41,11 @@ class GameCreateResponse(BaseModel):
 class GameJoinRequest(BaseModel):
     game_id: str = Field(..., description="ID of game to join.")
 
+# Accept both user_id and game_id for join in one payload
+class GameJoinRequestWithUser(BaseModel):
+    game_id: str = Field(..., description="ID of game to join.")
+    user_id: str = Field(..., description="User attempting to join.")
+
 class GameJoinResponse(BaseModel):
     game_id: str = Field(..., description="ID of joined game.")
     symbol: str = Field(..., description="'X' or 'O' assigned to this player.")
@@ -150,11 +155,18 @@ def create_game(user_id: str = Body(..., embed=True)):
 # ────────────────────────────────────────────────────────────────────────────────
 # PUBLIC_INTERFACE
 @app.post("/games/join", tags=["games"], response_model=GameJoinResponse, summary="Join an existing Tic Tac Toe game")
-def join_game(game_join: GameJoinRequest, user_id: str = Body(..., embed=True)):
+def join_game(join_req: GameJoinRequestWithUser):
     """
-    Joins an existing game as Player 'O'. Game must be in waiting-for-opponent state.
+    Joins an existing game as Player 'O' or rejoin as 'X' using game_id and user_id in the request body.
+    The request payload structure:
+        {
+            "game_id": "<game id>",
+            "user_id": "<user id>"
+        }
     """
-    game = GAMES.get(game_join.game_id)
+    game_id = join_req.game_id
+    user_id = join_req.user_id
+    game = GAMES.get(game_id)
     user = get_user_or_404(user_id)
     if not game:
         raise HTTPException(status_code=404, detail="Game not found")
@@ -171,7 +183,7 @@ def join_game(game_join: GameJoinRequest, user_id: str = Body(..., embed=True)):
         game["nicknames"]["O"] = user.get("nickname")
         game["status"] = GameStatusEnum.in_progress
     opponent_nickname = game["nicknames"]["X"] if symbol == "O" else game["nicknames"]["O"]
-    return GameJoinResponse(game_id=game_join.game_id, symbol=symbol, board=game["board"], opponent_nickname=opponent_nickname)
+    return GameJoinResponse(game_id=game_id, symbol=symbol, board=game["board"], opponent_nickname=opponent_nickname)
 
 # ────────────────────────────────────────────────────────────────────────────────
 # PUBLIC_INTERFACE
